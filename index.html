@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" resultado="width=device-width, initial-scale=1.0">
+    <title>Encriptador | Alura Challenge</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagenes/logoalura.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <div class="banner">
+                <img src="imagenes/logoalura.png" alt="Logotipo Alura">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="caja">
+            <div class="encriptador">
+                <form class="entrada">
+                    <div class="textoEntrada">
+                        <textarea name="areaTexto" id="texto" placeholder="Ingrese el texto aqui" required></textarea>
+                        <div class="requisitos">
+                            <div class="info">
+                                <img src="imagenes/exclamacion.png" alt="Alerta">
+                                <p id="warning">Solo letras minúsculas y sin acentos</p>
+                            </div>
+                            <div class="botonEntrada">
+                                <input id="enc" type="button" value="Encriptar">
+                                <input id="des" type="button" value="Desencriptar">
+                            </div> 
+                        </div>
+                    </div>
+                </form>
+
+                <div class="salidaTexto">
+                    <div class="resultadoTexto">
+                        <div class="resultado" id="default">
+                            <div class="animadoSalida">
+                                <img src="imagenes/muneco.png" alt="Personaje Buscando">
+                            </div><p>Ningún mensaje fue encontrado</p>
+                            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                        </div>
+                        <div class = "objetoAnimada" id="result">
+                            <textarea name="textoSalida" id="salida" disabled></textarea>
+                            <button id="copiar">Copiar</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy Copyright Alura Challenge - 2023</p>
+    </footer>
+</body>
+<script src="index.js"></script>
+</html>
